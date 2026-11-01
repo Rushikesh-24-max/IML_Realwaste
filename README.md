@@ -42,14 +42,27 @@ Click the badges to open notebooks directly in Colab:
 |---|---|---|---|
 | 0+1 | Setup & Split | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase0_1_setup_and_split.ipynb) |
 | 2 | Classical Baselines | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase2_classical_baselines.ipynb) |
-| 3 | Scratch CNN (Custom 4-layer) | 🚀 Ready to Run | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase3_scratch_cnn.ipynb) |
-| 4 | Pretrained CNNs | ⏳ Planned | — |
+| 3 | Scratch CNN (Custom 4-layer) | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase3_scratch_cnn.ipynb) |
+| 4 | Pretrained CNNs | 🚀 Next | — |
 | 5 | YOLOv8n-cls | ⏳ Planned | — |
 | 6 | Analysis | ⏳ Planned | — |
 
 ---
 
 ## Benchmark Results (Test Set: 713 Images)
+
+### Phase 3: Custom 4-Layer Scratch CNN (Trained from Scratch)
+
+| Model Variant | Test Accuracy (%) | Test Macro F1 | Test Loss | Key Characteristics |
+|---|---:|---:|---:|---|
+| **Scratch CNN (Baseline / No Aug)** | **73.49%** | **0.7424** | **0.7564** | No augmentation, Dropout=0.0, 20 epochs |
+| **Scratch CNN (Regularized + Aug)** | 67.04% | 0.6697 | 0.8655 | Data Aug (flips, rot, jitter, crop) + Dropout=0.4 + Weight Decay, 25 epochs |
+
+#### Key Insights from Scratch CNN:
+- **Major Leap from Classical:** The baseline Scratch CNN achieved **73.49% accuracy and 0.7424 Macro F1**, outperforming the best classical model (Random Forest: 59.89%, RBF SVM: 0.5785 Macro F1) by **+13.6% accuracy and +0.164 Macro F1**. This proves the superiority of end-to-end learned visual representations over hand-crafted HOG/Color descriptors.
+- **Ablation Observation (Baseline vs. Regularized):** The unaugmented baseline converged faster and reached higher test performance within 20–25 epochs, whereas heavy regularization (Dropout 0.4 + aggressive geometric/color transformations) constrained capacity in this compact 390k-parameter network. However, on **Vegetation**, the regularized model achieved higher performance (**0.910 vs 0.882 F1**), showing that augmentation improved robustness against natural visual variations.
+
+---
 
 ### Phase 2: Classical Baselines (HOG + HSV Color Histogram)
 

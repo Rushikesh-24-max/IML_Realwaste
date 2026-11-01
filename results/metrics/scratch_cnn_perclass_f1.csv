@@ -1,0 +1,10 @@
+,Scratch CNN (Baseline),Scratch CNN (Regularized),Gain (F1)
+Cardboard,0.849,0.8,-0.049
+Food Organics,0.833,0.807,-0.026
+Glass,0.775,0.623,-0.152
+Metal,0.752,0.704,-0.048
+Miscellaneous Trash,0.53,0.317,-0.213
+Paper,0.735,0.689,-0.046
+Plastic,0.72,0.64,-0.08
+Textile Trash,0.605,0.538,-0.067
+Vegetation,0.882,0.91,0.028
