@@ -1,0 +1,5 @@
+Model,Accuracy (%),Macro F1,Train Time(s)
+RBF SVM,59.47,0.5785,148.7
+Logistic Regression,55.82,0.5507,5.4
+Random Forest,59.89,0.5465,79.3
+Linear SVM,46.14,0.445,148.2

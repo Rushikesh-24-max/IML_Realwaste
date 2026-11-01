@@ -9,10 +9,12 @@ venv/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
-# Dataset — too large for GitHub (download via notebook)
+# Dataset folders & archives — too large for GitHub
 data/RealWaste/
 data/realwaste.zip
 data/*.zip
+realwaste-main/
+*.zip
 
 # Trained model weights — too large for GitHub
 results/models/*.pth
@@ -21,7 +23,3 @@ results/models/*.pt
 # OS
 .DS_Store
 Thumbs.db
-
-# CSV splits and metadata — small, commit these
-# results/metrics/ — commit these too
-# results/plots/ — commit these too
