@@ -42,7 +42,7 @@ Click the badges to open notebooks directly in Colab:
 |---|---|---|---|
 | 0+1 | Setup & Split | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase0_1_setup_and_split.ipynb) |
 | 2 | Classical Baselines | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase2_classical_baselines.ipynb) |
-| 3 | Scratch CNN | ⏳ Next | — |
+| 3 | Scratch CNN (Custom 4-layer) | 🚀 Ready to Run | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase3_scratch_cnn.ipynb) |
 | 4 | Pretrained CNNs | ⏳ Planned | — |
 | 5 | YOLOv8n-cls | ⏳ Planned | — |
 | 6 | Analysis | ⏳ Planned | — |
