@@ -1,0 +1,2 @@
+model,weights,selected_stage,selected_epoch,val_macro_f1,test_accuracy,test_macro_f1,test_loss,train_seconds
+efficientnet_b0,IMAGENET1K_V1,finetune,10,0.8778689039317112,0.8737727910238429,0.8784389979026535,0.3745831941655441,651.0470786700002

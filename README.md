@@ -43,7 +43,7 @@ Click the badges to open notebooks directly in Colab:
 | 0+1 | Setup & Split | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase0_1_setup_and_split.ipynb) |
 | 2 | Classical Baselines | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase2_classical_baselines.ipynb) |
 | 3 | Scratch CNN (Custom 4-layer) | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase3_scratch_cnn.ipynb) |
-| 4 | Pretrained CNNs | MobileNetV3 completed; EfficientNet/GoogLeNet pending | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase4_pretrained_cnns.ipynb) |
+| 4 | Pretrained CNNs | Completed | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase4_pretrained_cnns.ipynb) |
 | 5 | YOLOv8n-cls | Completed | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase5_yolo.ipynb) |
 | 6 | Analysis | ⏳ Planned | — |
 
@@ -87,3 +87,7 @@ MobileNetV3 Large reached 87.24% test accuracy and 0.8761 macro F1. Validation s
 ## Phase 5 YOLOv8n classification result
 
 YOLOv8n reached 91.30% test accuracy and 0.9229 macro F1 on the shared 713-image test set. Validation macro F1 selected epoch 22 of 25. Training took about 13.6 minutes on Tesla T4. See [Phase 5 progress](docs/phase5_progress.md).
+
+### Remaining Phase 4 CNN results
+
+EfficientNet-B0 achieved 87.38% test accuracy and 0.8784 macro F1, with fine-tuning epoch 10 selected by validation macro F1. GoogLeNet achieved 84.99% accuracy and 0.8544 macro F1, with epoch 7 selected. All planned Phase 4 models are complete. Full results are in [the combined summary](results/metrics/phase4_summary.csv) and [experiment notes](docs/phase4_progress.md).

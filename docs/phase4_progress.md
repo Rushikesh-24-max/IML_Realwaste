@@ -1,17 +1,15 @@
-# RealWaste experiment progress
+# Phase 4 completed
 
-MobileNetV3 Large completed on a Tesla T4 using the shared seed-42 split of 3,326 training, 713 validation, and 713 test images.
+All three pretrained CNNs used the shared seed-42 manifests with 3,326 training, 713 validation, and 713 test images. Each ran six head-training epochs and ten fine-tuning epochs with batch size 32. Checkpoints were selected by validation macro F1.
 
-The selected checkpoint was fine-tuning epoch 10, selected by validation macro F1 of 0.894055. Test accuracy was 0.872370, macro F1 was 0.876053, and cross-entropy loss was 0.555245. Training took 512.50817 seconds (about 8.5 minutes). These values were transcribed from the saved Phase 4 notebook output in Git commit d618b8d.
+EfficientNet-B0 achieved 87.38% test accuracy, 0.8784 macro F1, and 0.3746 test loss. Fine-tuning epoch 10 was selected with validation macro F1 0.8779. Training took 651.05 seconds (10.85 minutes).
 
-The classifier-head stage reached validation macro F1 of about 0.8903. Fine-tuning improved this to about 0.8941. Test accuracy improved by 13.75 percentage points over the scratch CNN baseline, and macro F1 improved by about 0.1337.
+GoogLeNet achieved 84.99% test accuracy, 0.8544 macro F1, and 0.4468 test loss. Fine-tuning epoch 7 was selected with validation macro F1 0.8621. Training took 558.59 seconds (9.31 minutes).
 
-The run used ImageNet IMAGENET1K_V2 weights, six head-training epochs, ten fine-tuning epochs, and batch size 32. Images were loaded from the runtime-local official dataset cache. Manifests, checkpoints, reports, predictions, and the confusion matrix were saved under the Drive project folder by the notebook.
+Both models passed a two-image forward/backward check on the T4 before training. GoogLeNet pretrained weights were loaded with auxiliary heads present, then those heads were disabled and removed. This fixes the original constructor argument incompatibility.
 
-MobileNetV3 is the only Phase 4 architecture evaluated so far. EfficientNet-B0 and GoogLeNet remain pending. Per-class findings require reading the exported report and predictions. A single seed provides a point estimate of performance.
+The two runs executed notebook revision fcb0dcc through a launch cell in the already connected Colab GPU session. A notebook copy is saved under the Drive project's notebooks folder. Model checkpoints, histories, per-class reports, 713-image prediction CSVs, and confusion matrices are stored under results in Drive. Prediction counts and accuracy were verified against the summary, and checkpoint and plot files were checked. The runtime environment was saved in results/metrics/phase4_remaining_environment.json.
 
-Phase 5 compares pretrained YOLOv8n classification using the same manifests. Its checkpoint selection uses validation macro F1. The final test predictions will be exported for Phase 6 comparative error analysis.
+GitHub metrics were transcribed from the Drive readback, including the full-precision MobileNetV3 summary. The combined results are in results/metrics/phase4_summary.csv. Both remaining CNNs used ImageNet IMAGENET1K_V1 weights and the same deterministic preprocessing for training and evaluation as the earlier Phase 4 run.
 
-References
-- Saved run https://github.com/Rushikesh-24-max/IML_Realwaste/blob/d618b8d/notebooks/phase4_pretrained_cnns.ipynb
-- YOLO classification https://docs.ultralytics.com/tasks/classify/
+All planned Phase 4 models have completed. EfficientNet-B0's accuracy exceeds MobileNetV3 by one test image out of 713, so this single-seed difference is small. YOLOv8n remains the strongest completed model at 91.30% accuracy and 0.9229 macro F1. Next work is comparative error analysis.
