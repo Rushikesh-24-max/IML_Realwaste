@@ -23,3 +23,7 @@ results/models/*.pt
 # OS
 .DS_Store
 Thumbs.db
+
+# Demo credentials and runtime logs
+.streamlit/secrets.toml
+demo/*.log

@@ -1,5 +1,13 @@
 # 🗑️ RealWaste Classification — IML Course Project
 
+## Working demonstration
+
+The Streamlit demo includes Classify, Compare models, and About the project tabs. An authenticated Modal CPU API runs inference, while the presentation computer handles the interface. Live deployment currently includes YOLOv8n and both scratch CNN variants. All ten saved experiment configurations are shown in the comparison tab. See [demo setup and structure](demo/README.md).
+
+```powershell
+python -m streamlit run demo/app.py
+```
+
 **Team:** Harin Savaliya · Rushikesh Talaviya · Divyang Vanjara · Akshat Agrawal · Anish Reddy  
 **Course:** Introduction to Machine Learning (IML), 5th Semester IT  
 **Dataset:** [RealWaste — UCI ML Repository #908](https://archive.ics.uci.edu/dataset/908/realwaste) | CC BY 4.0  

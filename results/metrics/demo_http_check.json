@@ -1,0 +1,145 @@
+{
+  "results": [
+    {
+      "model_id": "yolov8n",
+      "model": "YOLOv8n",
+      "predicted_class": "Food Organics",
+      "confidence": 0.9954960346221924,
+      "scores": [
+        {
+          "class": "Food Organics",
+          "score": 0.9954960346221924
+        },
+        {
+          "class": "Miscellaneous Trash",
+          "score": 0.004210285842418671
+        },
+        {
+          "class": "Plastic",
+          "score": 0.00019142187375109643
+        },
+        {
+          "class": "Cardboard",
+          "score": 7.157825893955305e-05
+        },
+        {
+          "class": "Vegetation",
+          "score": 2.8034004571964033e-05
+        },
+        {
+          "class": "Textile Trash",
+          "score": 1.9210308437322965e-06
+        },
+        {
+          "class": "Paper",
+          "score": 4.1023849917110056e-07
+        },
+        {
+          "class": "Metal",
+          "score": 3.49506905195085e-07
+        },
+        {
+          "class": "Glass",
+          "score": 6.610837743892262e-08
+        }
+      ],
+      "predict_ms": 102.56681299999926,
+      "model_load_ms": 1209.2711820000002
+    },
+    {
+      "model_id": "scratch_baseline",
+      "model": "Scratch CNN baseline",
+      "predicted_class": "Food Organics",
+      "confidence": 0.6624104380607605,
+      "scores": [
+        {
+          "class": "Food Organics",
+          "score": 0.6624104380607605
+        },
+        {
+          "class": "Miscellaneous Trash",
+          "score": 0.2532525956630707
+        },
+        {
+          "class": "Plastic",
+          "score": 0.07340481132268906
+        },
+        {
+          "class": "Cardboard",
+          "score": 0.005413065664470196
+        },
+        {
+          "class": "Textile Trash",
+          "score": 0.0033144804183393717
+        },
+        {
+          "class": "Vegetation",
+          "score": 0.0016372821992263198
+        },
+        {
+          "class": "Paper",
+          "score": 0.0003669565194286406
+        },
+        {
+          "class": "Glass",
+          "score": 0.00018338185327593237
+        },
+        {
+          "class": "Metal",
+          "score": 1.6963760572252795e-05
+        }
+      ],
+      "predict_ms": 37.83727400000103,
+      "model_load_ms": 20.1978399999998
+    },
+    {
+      "model_id": "scratch_regularized",
+      "model": "Scratch CNN regularized",
+      "predicted_class": "Food Organics",
+      "confidence": 0.5486659407615662,
+      "scores": [
+        {
+          "class": "Food Organics",
+          "score": 0.5486659407615662
+        },
+        {
+          "class": "Miscellaneous Trash",
+          "score": 0.35745567083358765
+        },
+        {
+          "class": "Plastic",
+          "score": 0.07035905122756958
+        },
+        {
+          "class": "Vegetation",
+          "score": 0.013481100089848042
+        },
+        {
+          "class": "Cardboard",
+          "score": 0.006153049413114786
+        },
+        {
+          "class": "Textile Trash",
+          "score": 0.0033326561097055674
+        },
+        {
+          "class": "Glass",
+          "score": 0.0002244480128865689
+        },
+        {
+          "class": "Paper",
+          "score": 0.0001874307927209884
+        },
+        {
+          "class": "Metal",
+          "score": 0.0001407439267495647
+        }
+      ],
+      "predict_ms": 26.34884399999926,
+      "model_load_ms": 21.150973999999323
+    }
+  ],
+  "server_ms": 2838.272779999999,
+  "device": "cpu",
+  "request_seconds": 3.2196533999958774
+}
