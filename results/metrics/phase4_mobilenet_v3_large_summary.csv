@@ -1,0 +1,2 @@
+model,weights,selected_stage,selected_epoch,val_macro_f1,test_accuracy,test_macro_f1,test_loss,train_seconds
+mobilenet_v3_large,IMAGENET1K_V2,finetune,10,0.894055,0.872370,0.876053,0.555245,512.50817

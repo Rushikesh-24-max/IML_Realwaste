@@ -43,8 +43,8 @@ Click the badges to open notebooks directly in Colab:
 | 0+1 | Setup & Split | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase0_1_setup_and_split.ipynb) |
 | 2 | Classical Baselines | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase2_classical_baselines.ipynb) |
 | 3 | Scratch CNN (Custom 4-layer) | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase3_scratch_cnn.ipynb) |
-| 4 | Pretrained CNNs | 🚀 Next | — |
-| 5 | YOLOv8n-cls | ⏳ Planned | — |
+| 4 | Pretrained CNNs | MobileNetV3 completed; EfficientNet/GoogLeNet pending | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase4_pretrained_cnns.ipynb) |
+| 5 | YOLOv8n-cls | Notebook ready; GPU run pending | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase5_yolo.ipynb) |
 | 6 | Analysis | ⏳ Planned | — |
 
 ---
@@ -79,3 +79,7 @@ Click the badges to open notebooks directly in Colab:
 - **Easiest classes:** **Vegetation** (F1: 0.795) and **Cardboard** (F1: 0.767) — both have distinct color profiles and clear edge textures that HOG and Color Hist capture well.
 - **Hardest classes:** **Miscellaneous Trash** (F1: 0.163–0.370) and **Textile Trash** (F1: 0.185–0.415) — high visual variance and fewer samples make hand-crafted features struggle.
 - All models comfortably beat the 19.4% majority baseline, confirming the utility of hand-crafted feature baselines before moving to deep representations.
+
+## Phase 4 transfer learning result
+
+MobileNetV3 Large reached 87.24% test accuracy and 0.8761 macro F1. Validation selected fine-tuning epoch 10. The run took about 8.5 minutes on a Tesla T4. See [experiment progress](docs/phase4_progress.md) for settings and remaining experiments.
