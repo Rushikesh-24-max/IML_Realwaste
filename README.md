@@ -44,7 +44,7 @@ Click the badges to open notebooks directly in Colab:
 | 2 | Classical Baselines | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase2_classical_baselines.ipynb) |
 | 3 | Scratch CNN (Custom 4-layer) | ✅ Completed | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase3_scratch_cnn.ipynb) |
 | 4 | Pretrained CNNs | MobileNetV3 completed; EfficientNet/GoogLeNet pending | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase4_pretrained_cnns.ipynb) |
-| 5 | YOLOv8n-cls | Notebook ready; GPU run pending | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase5_yolo.ipynb) |
+| 5 | YOLOv8n-cls | Completed | [Open in Colab](https://colab.research.google.com/github/Rushikesh-24-max/IML_Realwaste/blob/master/notebooks/phase5_yolo.ipynb) |
 | 6 | Analysis | ⏳ Planned | — |
 
 ---
@@ -83,3 +83,7 @@ Click the badges to open notebooks directly in Colab:
 ## Phase 4 transfer learning result
 
 MobileNetV3 Large reached 87.24% test accuracy and 0.8761 macro F1. Validation selected fine-tuning epoch 10. The run took about 8.5 minutes on a Tesla T4. See [experiment progress](docs/phase4_progress.md) for settings and remaining experiments.
+
+## Phase 5 YOLOv8n classification result
+
+YOLOv8n reached 91.30% test accuracy and 0.9229 macro F1 on the shared 713-image test set. Validation macro F1 selected epoch 22 of 25. Training took about 13.6 minutes on Tesla T4. See [Phase 5 progress](docs/phase5_progress.md).

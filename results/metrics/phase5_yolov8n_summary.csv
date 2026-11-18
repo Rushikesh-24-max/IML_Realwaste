@@ -1,0 +1,2 @@
+model,test_accuracy,test_macro_f1,val_macro_f1,selected_epoch,train_seconds,checkpoint
+YOLOv8n classification,0.9130434782608695,0.9229063762931937,0.93038,22,815.4780335880002,/content/drive/MyDrive/IML_RealWaste/results/yolo/phase5_yolov8n_20261118_182913/weights/best.pt
