@@ -27,3 +27,6 @@ Thumbs.db
 # Demo credentials and runtime logs
 .streamlit/secrets.toml
 demo/*.log
+
+# Local report build files
+reports/.build/

@@ -1,0 +1,6 @@
+.build/
+.chart-data-*/
+
+# Earlier locally generated drafts
+output/RealWaste_Project_Pipeline.pptx
+output/RealWaste_Project_Presentation.pptx

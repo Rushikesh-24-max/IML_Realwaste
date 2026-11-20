@@ -12,4 +12,4 @@ The two runs executed notebook revision fcb0dcc through a launch cell in the alr
 
 GitHub metrics were transcribed from the Drive readback, including the full-precision MobileNetV3 summary. The combined results are in results/metrics/phase4_summary.csv. Both remaining CNNs used ImageNet IMAGENET1K_V1 weights and the same deterministic preprocessing for training and evaluation as the earlier Phase 4 run.
 
-All planned Phase 4 models have completed. EfficientNet-B0's accuracy exceeds MobileNetV3 by one test image out of 713, so this single-seed difference is small. YOLOv8n remains the strongest completed model at 91.30% accuracy and 0.9229 macro F1. Next work is comparative error analysis.
+All planned Phase 4 models have completed. EfficientNet-B0's accuracy exceeds MobileNetV3 by one test image out of 713, so this single-seed difference is small. The [final evaluation](final_evaluation.md) compares these runs with the classical, scratch CNN, and YOLOv8n results.

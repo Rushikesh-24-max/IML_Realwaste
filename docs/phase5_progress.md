@@ -8,4 +8,4 @@ Drive exports were verified in IML_RealWaste/results/metrics, with weights and f
 
 YOLO improved accuracy over MobileNetV3 by about 4.07 percentage points and macro F1 by 0.0469 on the common test set. Strongest class F1 scores were Textile Trash (0.9796), Vegetation (0.9764), and Food Organics (0.9677). Miscellaneous Trash remained the lowest at 0.8671.
 
-EfficientNet-B0 and GoogLeNet remain pending. Phase 6 can compare completed models using reports and predictions, then inspect misclassified images. Report these as single-seed comparisons.
+The EfficientNet-B0 and GoogLeNet experiments were completed afterward. See the [Phase 4 notes](phase4_progress.md) and the [final evaluation](final_evaluation.md) for the comparison across all ten configurations.
